@@ -7,7 +7,7 @@ html, body, div {
 
 .nav-bar {
     background-color: #1E1E24;
-    overflow: hidden;
+    overflow: hidden; /* Ensure the navbar contents are contained */
 }
 
 .nav-bar a {
@@ -31,9 +31,12 @@ html, body, div {
 
 .info {
     height: 80vh;
-    background: white;
-    width: 94%;
-    margin: 3%;
+    border-radius: 10px;
+    padding: 3%;
+    background-color: #49494a;
+    color: #ffffff;
+    width: 88%;
+    margin: 0 auto; /* Center the info section horizontally */
     overflow: auto;
     white-space: normal; /* Allow text to wrap normally */
     word-wrap: break-word; /* Ensure long words break and wrap to the next line */
@@ -49,5 +52,21 @@ html, body, div {
 .right {
     margin-left: 70%;
     height: 100%;
-    background: red;
+    background: rgb(39, 39, 39);
+}
+
+.right input {
+    color: white;
+    background-color: #49494a;
+    margin: 0px 0px 12px 12px;
+    width: 78%;
+    padding: 3px;
+}
+
+.right a {
+    background-color: #507DBC;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
 }
