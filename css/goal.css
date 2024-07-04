@@ -1,0 +1,146 @@
+/* Reset some basic styles */
+html, body, div, h1, h2, p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Remove any default margin from the body to avoid white space at the top */
+body {
+    margin: 0;
+}
+
+/* Overall page styles */
+body {
+    background-color: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar styles */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E24;
+    padding: 10px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+    margin-bottom: 4%;
+}
+
+.nav-bar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Ensures the buttons are circular */
+    height: 40px; /* Ensures the buttons are circular */
+    border-radius: 50%; /* Makes the buttons circular */
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.return-button {
+    background-color: #d53535;
+    font-size: 32px; /* Increase font size for the arrow */
+}
+
+.profile-button img {
+    width: 30px; /* Adjust the size of the profile icon */
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Heading styles */
+h1 {
+    color: white;
+}
+
+/* Container for all goals */
+.goal-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual goal box styles */
+.goal {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px); /* Two goals per row with space between */
+    box-sizing: border-box;
+}
+
+/* Goal heading styles */
+.goal h2 {
+    margin-bottom: 10px;
+    color: #d53535;
+}
+
+/* Paragraph styles within goal boxes */
+.goal p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Progress bar styles */
+progress {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Styles for the add goal placeholder */
+.add-goal {
+    background-color: #fff;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Two goals per row with space between */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-goal-button {
+    font-size: 48px;
+    color: #d53535;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.add-goal-button:hover {
+    color: #a92b2b;
+}
