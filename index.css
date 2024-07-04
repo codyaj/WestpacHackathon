@@ -35,7 +35,8 @@ html, body, div {
     width: 94%;
     margin: 3%;
     overflow: auto;
-    white-space: pre-line;
+    white-space: normal; /* Allow text to wrap normally */
+    word-wrap: break-word; /* Ensure long words break and wrap to the next line */
 }
 
 .left {

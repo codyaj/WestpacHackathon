@@ -5,8 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     sendButton.addEventListener('click', function(event) {
         event.preventDefault();
-        myText.textContent = myText.textContent + "\nYou > " + inputText.value;
-        // ADD CODE HERE FOR TEXTBOT FUNCTIONALITY
+
+        const newText = "You > " + inputText.value.trim();
+        if (newText) {
+            myText.innerHTML += newText + '<br>';
+        }
+
+        // Hard Coded Outputs :(
+
         inputText.value = '';
     });
 });
