@@ -1,0 +1,200 @@
+/* Reset some basic styles */
+html, body, div, h1, h2, p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Overall page styles */
+body {
+    background-color: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar styles */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E24;
+    padding: 10px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.nav-bar h1 {
+    color: #f2f2f2;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.points-bar-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#pointsBar {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-bottom: 5px;
+}
+
+#pointsBar::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#pointsBar::-webkit-progress-value {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}
+
+#pointsBar::-moz-progress-bar {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Container for all goals */
+.goal-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.goal-container h2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Individual goal box styles */
+.goal {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 20px); /* Three goals per row with space between */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Goal heading styles */
+.goal h2 {
+    margin-bottom: 10px;
+    color: #d53535;
+}
+
+/* Paragraph styles within goal boxes */
+.goal p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Progress bar styles */
+progress {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Container for all education */
+.education-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.education-container h2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Individual class box styles */
+.class {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 20px); /* Three classes per row with space between */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Class heading styles */
+.class h2 {
+    margin-bottom: 10px;
+    color: #d53535;
+}
+
+/* Paragraph styles within class boxes */
+.class p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Progress bar styles for classes */
+#classProgress {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#classProgress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#classProgress::-webkit-progress-value {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}
+
+#classProgress::-moz-progress-bar {
+    background-color: #d53535;
+    border-radius: 8px 0 0 8px;
+}

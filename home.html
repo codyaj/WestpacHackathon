@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Advisor</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h1>Financial Advisor</h1>
+        <div class="profile">
+            <a href="profile.html" class="profile-button"><img src="profile-icon.png" alt="Profile"></a>
+            <p>1702 Points</p>
+        </div>
+    </div>
+    <div class="points-bar-container">
+        <progress id="pointsBar" max="2000" value="1702">1702/2000 Points</progress>
+        <p>298 points until your next reward!</p>
+    </div>
+    <div class="goal-container">
+        <h2>Goals</h2>
+        <div class="goal" onclick="window.location.href='goal.html';">
+            <h2>Emergency Fund</h2>
+            <progress id="goalAmount" max="10000" value="7540">$7540</progress>
+        </div>
+        <div class="goal" onclick="window.location.href='goal.html';">
+            <h2>New Car</h2>
+            <progress id="goalAmount" max="25000" value="4203">$4203</progress>
+        </div>
+        <div class="goal" onclick="window.location.href='goal.html';">
+            <h2>Vacation</h2>
+            <progress id="goalAmount" max="5000" value="1500">$1500</progress>
+        </div>
+    </div>
+    <div class="education-container">
+        <h2>Education</h2>
+        <div class="class" onclick="window.location.href='education.html';">
+            <h2>Class Name</h2>
+            <progress id="classProgress" max="100" value="75">75%</progress>
+        </div>
+        <div class="class" onclick="window.location.href='education.html';">
+            <h2>Class Name</h2>
+            <progress id="classProgress" max="100" value="0">0%</progress>
+        </div>
+    </div>
+</body>
+</html>
