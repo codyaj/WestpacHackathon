@@ -6,15 +6,16 @@ html, body, div {
 }
 
 .nav-bar {
-    background-color: #1E1E24;
+    background-color: rgb(39, 39, 39);
     overflow: hidden; /* Ensure the navbar contents are contained */
+    box-shadow: 0 4px 2px -2px gray; /* Add a shadow to the bottom of the navbar */
 }
 
 .nav-bar a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2vh 16px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -25,12 +26,12 @@ html, body, div {
 }
 
 .nav-bar a.active {
-    background-color: #507DBC;
+    background-color: #d53535;
     color: white;
 }
 
 .info {
-    height: 80vh;
+    height: 84vh;
     border-radius: 10px;
     padding: 3%;
     background-color: #49494a;
@@ -58,15 +59,15 @@ html, body, div {
 .right input {
     color: white;
     background-color: #49494a;
-    margin: 0px 0px 12px 12px;
+    margin: 5px 5px 12px 12px;
     width: 78%;
-    padding: 3px;
+    padding: 4px;
 }
 
 .right a {
-    background-color: #507DBC;
+    background-color: #d53535;
     text-decoration: none;
     color: white;
-    padding: 8px;
+    padding: 6px;
     border-radius: 5px;
 }
