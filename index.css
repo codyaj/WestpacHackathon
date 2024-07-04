@@ -6,7 +6,7 @@ html, body, div {
 }
 
 .nav-bar {
-    background-color: #333;
+    background-color: #1E1E24;
     overflow: hidden;
 }
 
@@ -25,21 +25,28 @@ html, body, div {
 }
 
 .nav-bar a.active {
-    background-color: #04AA6D;
+    background-color: #507DBC;
     color: white;
 }
 
-.content {
-    width: 100%;
+.info {
+    height: 80vh;
+    background: white;
+    width: 94%;
+    margin: 3%;
+    overflow: auto;
+    white-space: pre-line;
 }
 
 .left {
     width: 70%;
+    height: 100%;
     float: left;
     background: green;
 }
 
 .right {
     margin-left: 70%;
+    height: 100%;
     background: red;
 }
