@@ -62,13 +62,15 @@ body {
 .profile-icon img {
     width: 250px;
     height: 250px;
+    padding-right: 20px;
 }
 
 /* Points bar container */
 .points-bar-container {
-    width: 100%;
+    width: 98%;
     margin: 20px 0;
     text-align: center;
+    padding: 0 1%;
 }
 
 #pointsBar {
@@ -97,7 +99,8 @@ body {
 
 /* Rewards container */
 .rewards-container {
-    width: 100%;
+    width: 98%;
+    padding: 0 1%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
