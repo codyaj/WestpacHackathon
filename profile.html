@@ -10,10 +10,16 @@
 </head>
 <body>
     <div class="profile-container">
+        <button class="return-button" onclick="window.location.href='index.html'"></button>
         <div class="profile-info">
-            <p id="userName">Name: John Doe</p>
-            <p id="currentPoints">Current Points: <span class="points-display"></span></p>
-            <p id="badges">Badges: <span class="badges-display"></span></p>
+            <h1 id="userName">John Doe</h1>
+            <p id="currentPoints" class="subheading">Current Points: <span class="points-display"></span></p>
+            <div class="badges-container">
+                <img src="img/badge1.png" alt="Badge 1" class="badge">
+                <img src="img/badge2.webp" alt="Badge 2" class="badge">
+                <img src="img/badge3.png" alt="Badge 3" class="badge">
+                <!-- Add more badges as needed -->
+            </div>
         </div>
         <div class="profile-icon">
             <img src="img/pfp.jpg" alt="Profile">
