@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Education</title>
+    <link rel="stylesheet" href="css/education.css">
+    <script src="js/points.js" defer></script>
+    <script src="js/education.js" defer></script>
 </head>
 <body>
-    
+    <div class="nav-bar">
+        <a href="index.html" class="return-button">Return</a>
+        <h1>Financial Advisor</h1>
+        <div class="profile">
+            <a href="profile.html" class="profile-button"><img src="img/pfp.avif" alt="Profile"></a>
+            <p class="points-display"></p>
+        </div>
+    </div>
+    <div class="points-bar-container">
+        <progress id="pointsBar" max="2000" value=""></progress>
+        <p class="points-until-next-reward"></p>
+    </div>
+    <div class="education-container">
+        <h2>Education</h2>
+        <div class="class" data-reward="40" onclick="openQuiz(this);">
+            <h2>Class Name 1</h2>
+            <p><b>Reward: </b>40 Points</p>
+            <progress id="classProgress" max="100" value="75">75%</progress>
+        </div>
+        <div class="class" data-reward="15" onclick="openQuiz(this);">
+            <h2>Class Name 2</h2>
+            <p><b>Reward: </b>15 Points</p>
+            <progress id="classProgress" max="100" value="0">0%</progress>
+        </div>
+    </div>
+
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuiz();">&times;</span>
+            <h2>Quiz Time!</h2>
+            <form id="quizForm">
+                <p>What is the capital of France?</p>
+                <input type="radio" name="answer" value="Paris"> Paris<br>
+                <input type="radio" name="answer" value="London"> London<br>
+                <input type="radio" name="answer" value="Berlin"> Berlin<br>
+                <input type="radio" name="answer" value="Madrid"> Madrid<br>
+                <button type="button" onclick="submitQuiz();">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
