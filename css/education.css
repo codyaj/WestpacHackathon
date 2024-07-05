@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation bar styles */
@@ -19,9 +21,9 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #1E1E24;
-    padding: 0 20px;
+    padding: 10px 20px;
     box-shadow: 0 4px 2px -2px gray;
-    position: relative;
+    margin-bottom: 4%;
 }
 
 .nav-bar h1 {
