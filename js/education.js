@@ -12,7 +12,7 @@ function closeQuiz() {
 function submitQuiz() {
     const quizForm = document.getElementById('quizForm');
     const selectedAnswer = quizForm.querySelector('input[name="answer"]:checked');
-    if (selectedAnswer && selectedAnswer.value === 'Paris') {
+    if (selectedAnswer && selectedAnswer.value === 'A plan for how you will spend your money.') {
         const modal = document.getElementById('quizModal');
         const rewardPoints = parseInt(modal.dataset.reward, 10);
         addPoints(rewardPoints);
