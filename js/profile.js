@@ -13,16 +13,3 @@ function purchaseReward(cost, rewardId) {
         alert('Not enough points to purchase this reward.');
     }
 }
-
-function displayBadges() {
-    // Example badges data
-    const badges = [
-        'Beginner Saver',
-        'Intermediate Saver',
-        'Advanced Saver'
-    ];
-    const badgesDisplay = document.querySelector('.badges-display');
-    if (badgesDisplay) {
-        badgesDisplay.textContent = badges.join(', ');
-    }
-}
