@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="js/points.js" defer></script>
+    <script src="js/profile.js" defer></script>
 </head>
 <body>
-    
+    <div class="profile-container">
+        <div class="profile-info">
+            <p id="userName">Name: John Doe</p>
+            <p id="currentPoints">Current Points: <span class="points-display"></span></p>
+            <p id="badges">Badges: <span class="badges-display"></span></p>
+        </div>
+        <div class="profile-icon">
+            <img src="img/pfp.jpg" alt="Profile">
+        </div>
+    </div>
+    <div class="points-bar-container">
+        <progress id="pointsBar" max="2000" value=""></progress>
+        <p class="points-until-next-reward"></p>
+    </div>
+    <div class="rewards-container">
+        <h2>Rewards</h2>
+        <div class="reward" id="reward1">
+            <img src="img/reward1.png" alt="Reward 1">
+            <div class="reward-info">
+                <p>Reward 1</p>
+                <p>Cost: 500 Points</p>
+                <p>Description: $10 Gift Card</p>
+                <button onclick="purchaseReward(500, 'reward1')">Purchase</button>
+            </div>
+        </div>
+        <div class="reward" id="reward2">
+            <img src="img/reward2.png" alt="Reward 2">
+            <div class="reward-info">
+                <p>Reward 2</p>
+                <p>Cost: 1000 Points</p>
+                <p>Description: $25 Gift Card</p>
+                <button onclick="purchaseReward(1000, 'reward2')">Purchase</button>
+            </div>
+        </div>
+        <!-- Add more rewards as needed -->
+    </div>
 </body>
 </html>
