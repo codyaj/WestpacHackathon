@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Advisor</title>
     <link rel="stylesheet" href="css/home.css">
+    <script src="js/points.js" defer></script>
 </head>
 <body>
     <div class="nav-bar">
         <h1>Financial Advisor</h1>
         <div class="profile">
             <a href="profile.html" class="profile-button"><img src="img/pfp.avif" alt="Profile"></a>
-            <p>1702 Points</p>
+            <p class="points-display"></p>
         </div>
     </div>
     <div class="points-bar-container">
-        <progress id="pointsBar" max="2000" value="1702">1702/2000 Points</progress>
-        <p>298 points until your next reward!</p>
+        <progress id="pointsBar" max="2000" value=""></progress>
+        <p class="points-until-next-reward"></p>
     </div>
     <div class="goal-container">
         <h2>Goals</h2>
