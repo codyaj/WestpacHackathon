@@ -1,3 +1,8 @@
+html, body, div {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
 /* Overall page styles */
 body {
     background-color: #f4f4f9;
@@ -14,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #1E1E24;
-    padding: 10px 20px;
+    padding: 0 20px;
     box-shadow: 0 4px 2px -2px gray;
     position: relative;
 }
@@ -22,16 +27,23 @@ body {
 .nav-bar h1 {
     color: #f2f2f2;
     text-align: center;
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex-grow: 1;
 }
 
 .return-button {
-    color: #f2f2f2;
+    color: black;
     text-decoration: none;
     font-size: 18px;
+    background-color: #d53535;
+    padding: 10px 12px;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+}
+
+.return-button:hover {
+    color: #cecece;
+    background-color: #a22929;
 }
 
 .profile {
